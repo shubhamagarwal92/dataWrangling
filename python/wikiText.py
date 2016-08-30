@@ -1,4 +1,6 @@
-@author = 'Shubham'
+#This python script scraps data from wikipedia
+#and prints the extracted text on the screen 
+
 from bs4 import BeautifulSoup
 import urllib2
 
