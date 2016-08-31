@@ -17,3 +17,15 @@ soup = wikiWrangler(wiki)
 paras = soup.find_all("p")
 firstPara = paras[0].get_text()
 print(firstPara)
+
+
+### Find siblings:
+# s = soup.p.next_sibling.next_sibling
+
+### Find children/content:
+# content= firstPara.contents
+# text = ""
+# for line in content:
+# 	print(line.find_all("a")[0].get('href'))
+# 	if len(line)>1 or (len(line.get('class'))==1 and line.get('class')!='reference'):
+# 		text = text+line.string
